@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Base Place</title>
+  <style>
+    /* Make the page fill the screen */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 100px;
+      margin: 40px 0 10px 0;
+      font-family: Courier, monospace;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin: 0 0 40px 0;
+      font-family: 'Lexend', serif;
+    }
+
+    /* Game row styling */
+    .game-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; /* lets cards wrap on smaller screens */
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    /* Card styling */
+    .game-card {
+      width: 300px; /* fixed width for all cards */
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: left;
+      transition: transform 0.2s;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+    }
+
+    .game-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .game-title {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .game-desc {
+      font-size: 16px;
+      color: #555;
+      padding: 0 10px 10px 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Base Place</h1>
+  <h2>Cool Stuff</h2>
+
+  <div class="game-row">
+    <div class="game-card">
+      <img src="https://i.imgur.com/example.png" alt="forest">
+      <div class="game-title">Forest</div>
+      <div class="game-desc">Not done.</div>
+    </div>
+
+    <div class="game-card">
+      <img src="https://i.imgur.com/example.png" alt="drive">
+      <div class="game-title">Drive</div>
+      <div class="game-desc">Not done.</div>
+    </div>
+
+    <div class="game-card">
+      <img src="https://i.imgur.com/example.png" alt="cool">
+      <div class="game-title">Cool</div>
+      <div class="game-desc">Not done.</div>
+    </div>
+  </div>
+
+</body>
+</html>
